@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Parse KauMa",
+    "version": "1.0",
+    "description": "Parst Actions aus E-Mails und zeigt sie in Tabellenform an",
+    "permissions": [
+        "messagesRead",
+        "tabs"
+    ],
+    "browser_specific_settings": {
+    "gecko": {
+      "id": "kauma-parser@scheissndreck.de",
+      "strict_min_version": "91.0"
+    }
+  },
+    "message_display_action": {
+        "default_title": "Parse Actions",
+        "default_icon": "icon.png"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "web_accessible_resources": [
+        "table.html"
+    ]
+}
